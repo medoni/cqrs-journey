@@ -32,6 +32,10 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="Moq, Version=4.0.10827.0, Culture=neutral, PublicKeyToken=69f491c39445e920">
+          <HintPath>..\..\..\packages\Moq.4.0.10827\lib\NET40\Moq.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
@@ -42,11 +46,16 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Messaging\EventProcessorFixture.cs" />
         <Compile Include="Messaging\MessageRecieverFixture.cs" />
         <Compile Include="Messaging\MessageSenderFixture.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
+      <ProjectReference Include="..\..\Infrastructure\Infrastructure.csproj">
+        <Project>{b5786d07-5888-4df5-b295-3fea593f3bfe}</Project>
+        <Name>Infrastructure</Name>
+      </ProjectReference>
       <ProjectReference Include="..\Infrastructure.LocalFileSystem.csproj">
         <Project>{7d5ae45a-6a37-4314-bd5f-fc07b8f5378e}</Project>
         <Name>Infrastructure.LocalFileSystem</Name>
