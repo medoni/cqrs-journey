@@ -5,11 +5,11 @@
 *.[Cc]ache
 *.bak
 *.ncb
-*.log 
+*.log
 *.DS_Store
 *.gpState
 *.userprefs
-[Tt]humbs.db 
+[Tt]humbs.db
 _ReSharper.*
 *.resharper
 TestResults
@@ -25,3 +25,4 @@ _UpgradeReport_Files
 /source/Migrations/MigrationToV3.Azure/csx/
 *.build.csdef
 *crunch*
+.idea/
