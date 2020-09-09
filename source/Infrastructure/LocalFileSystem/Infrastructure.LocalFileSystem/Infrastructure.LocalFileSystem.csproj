@@ -32,6 +32,7 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="Microsoft.CSharp" />
         <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
           <HintPath>..\..\..\packages\Newtonsoft.Json.4.5.7\lib\net40\Newtonsoft.Json.dll</HintPath>
           <Private>True</Private>
@@ -44,6 +45,7 @@
     <ItemGroup>
         <Compile Include="DBAutoId.cs" />
         <Compile Include="DefaultDBInitalizer.cs" />
+        <Compile Include="Messaging\Handling\CommandProcessor.cs" />
         <Compile Include="Messaging\Handling\EventProcessor.cs" />
         <Compile Include="Messaging\Handling\MessageProcessor.cs" />
         <Compile Include="Messaging\IMessageReceiver.cs" />

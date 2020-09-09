@@ -46,6 +46,7 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Messaging\CommandProcessorFixture.cs" />
         <Compile Include="Messaging\EventProcessorFixture.cs" />
         <Compile Include="Messaging\MessageRecieverFixture.cs" />
         <Compile Include="Messaging\MessageSenderFixture.cs" />
