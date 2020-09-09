@@ -32,8 +32,12 @@ namespace Infrastructure.LocalFileSystem.Messaging.Implementation {
         }
 
         private void InsertMessage(Message message) {
+            File.WriteAllText(DBAutoId.CreateNextId(_storageDirectory), GetMessageJson(message));
+        }
+
+        internal static string GetMessageJson(Message message) {
             var json = JsonConvert.SerializeObject(message, FormattedJson);
-            File.WriteAllText(DBAutoId.CreateNextId(_storageDirectory), json);
+            return json;
         }
     }
 }

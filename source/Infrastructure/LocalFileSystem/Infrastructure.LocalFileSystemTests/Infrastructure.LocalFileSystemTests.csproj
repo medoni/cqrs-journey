@@ -42,6 +42,7 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Messaging\MessageRecieverFixture.cs" />
         <Compile Include="Messaging\MessageSenderFixture.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>

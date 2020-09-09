@@ -44,10 +44,13 @@
     <ItemGroup>
         <Compile Include="DBAutoId.cs" />
         <Compile Include="DefaultDBInitalizer.cs" />
+        <Compile Include="Messaging\IMessageReceiver.cs" />
         <Compile Include="Messaging\IMessageSender.cs" />
+        <Compile Include="Messaging\Implementation\MessageReceiver.cs" />
         <Compile Include="Messaging\Implementation\MessageSender.cs" />
         <Compile Include="Messaging\Implementation\MessagingDbInitializer.cs" />
         <Compile Include="Messaging\Message.cs" />
+        <Compile Include="Messaging\MessageReceivedEventArgs.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
