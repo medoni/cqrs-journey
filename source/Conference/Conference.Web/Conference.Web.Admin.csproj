@@ -149,12 +149,6 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup Condition=" '$(Configuration)|$(Platform)' != 'DebugLocal|AnyCPU' ">
-    <Content Include="..\..\Infrastructure\Azure\Settings.xml">
-      <Link>Settings.xml</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
   <ItemGroup>
     <Content Include="Content\common\common.css" />
     <Content Include="Content\content-main\content-main.css" />
